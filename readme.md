@@ -265,10 +265,10 @@ def sigmoid(z):
 ```
 # 映射为多项式 
 def mapFeature(X1,X2):
-    degree = 3;                     # 映射的最高次方
+    degree = 2;                     # 映射的最高次方
     out = np.ones((X1.shape[0],1))  # 映射后的结果数组（取代X）
     '''
-    这里以degree=2为例，映射为1,x1,x2,x1^2,x1,x2,x2^2
+    这里以degree=2为例，映射为1,x1,x2,x1^2,x1*x2,x2^2
     '''
     for i in np.arange(1,degree+1): 
         for j in range(i+1):
